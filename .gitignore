@@ -1,0 +1,9 @@
+# node_modules（依存パッケージ）
+node_modules/
+
+# Vite のビルド成果物
+dist/
+
+# 一時ファイル・キャッシュ類
+.DS_Store
+*.log
