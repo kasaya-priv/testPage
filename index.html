@@ -6,26 +6,32 @@
   <title>testpage</title>
 </head>
 <body>
-  <div class="flex flex-col items-center justify-center h-screen">
-    <h1 class="text-4xl font-bold">Hello, World!</h1>
-    <div class="mt-4">テストコンテンツ</div>
-    <div class="mt-4">テストコンテンツ</div>
-    <div class="mt-4">これはホットリロードなのかい？</div>
-    <div class="mt-4">これでどうかな</div>
-    <p>キーチェーンからパスフレーズを読み込む設定
-~/.ssh/configファイルに、以下を記述することで解決しました。
-
-Host *
-UseKeychain yes
-僕の場合、configファイルが存在しなかったので、新しく作成しました。
-
-※その後、またパスフレーズを聞かれるようになったことがあったので、その時の方法を以下に追加しておきました。
-
-configファイルの追加で解決しない場合
-上述したconfigでの設定が問題なさそうなのに、まだパスフレーズを聞かれる場合は、以下のコマンドでキーチェーンにパスフレーズを保存することで解決するようです。
-
-ssh-add -K ~/.ssh/id_rsa
-それでも解決しない場合は、GitHubヘルプ  で説明されている手順を見直してみると良いかもしれません。</p>
+  <div id="page-wrapper" class="h-screen bg-yellow-200">
+    <div class="max-w-7xl mx-auto bg-yellow-100">
+      <header class="border-solid border">
+        <h1 class="text-4xl font-bold">Hello, World!</h1>
+      </header>
+      <main class="flex flex-col items-center justify-center h-screen">
+        <div class="mt-4">テストコンテンツ</div>
+        <div class="mt-4">テストコンテンツ</div>
+        <div class="mt-4">これはホットリロードなのかい？</div>
+        <div class="mt-4">これでどうかな</div>
+        <p>キーチェーンからパスフレーズを読み込む設定<br>
+          ~/.ssh/configファイルに、以下を記述することで解決しました。<br>
+          <br>
+          Host *<br>
+          UseKeychain yes<br>
+          僕の場合、configファイルが存在しなかったので、新しく作成しました。<br>
+          <br>
+          ※その後、またパスフレーズを聞かれるようになったことがあったので、その時の方法を以下に追加しておきました。<br>
+          <br>
+          configファイルの追加で解決しない場合<br>
+          上述したconfigでの設定が問題なさそうなのに、まだパスフレーズを聞かれる場合は、以下のコマンドでキーチェーンにパスフレーズを保存することで解決するようです。<br>
+          <br>
+          ssh-add -K ~/.ssh/id_rsa<br>
+          それでも解決しない場合は、GitHubヘルプ  で説明されている手順を見直してみると良いかもしれません。</p>
+      </main>
+    </div>
   </div>
   <!-- Vite用エントリーポイント -->
   <script type="module" src="/src/main.js"></script>
