@@ -6,17 +6,18 @@
   <title>testpage</title>
 </head>
 <body>
-  <div id="page-wrapper" class="h-screen bg-yellow-200">
-    <div class="max-w-7xl mx-auto bg-yellow-100">
+  <div id="page-wrapper" class="min-h-screen bg-yellow-200">
+    <div class="max-w-7xl mx-auto min-h-screen flex flex-col">
       <header class="border-solid border">
         <h1 class="text-4xl font-bold">Hello, World!</h1>
       </header>
-      <main class="flex flex-col items-center justify-center h-screen">
+      <main class="flex flex-col justify-center flex-1 bg-yellow-100">
         <div class="mt-4">テストコンテンツ</div>
         <div class="mt-4">テストコンテンツ</div>
         <div class="mt-4">これはホットリロードなのかい？</div>
         <div class="mt-4">これでどうかな</div>
-        <p>キーチェーンからパスフレーズを読み込む設定<br>
+        <p class="mt-4">
+          キーチェーンからパスフレーズを読み込む設定<br>
           ~/.ssh/configファイルに、以下を記述することで解決しました。<br>
           <br>
           Host *<br>
@@ -29,7 +30,12 @@
           上述したconfigでの設定が問題なさそうなのに、まだパスフレーズを聞かれる場合は、以下のコマンドでキーチェーンにパスフレーズを保存することで解決するようです。<br>
           <br>
           ssh-add -K ~/.ssh/id_rsa<br>
-          それでも解決しない場合は、GitHubヘルプ  で説明されている手順を見直してみると良いかもしれません。</p>
+          それでも解決しない場合は、GitHubヘルプ  で説明されている手順を見直してみると良いかもしれません。
+        </p>
+        <p class="mt-4">
+          ビルドする必要があるというのがネックとなると思われる。<br>
+          一人で完結するのであれば、使えるのかしら？
+        </p>
       </main>
     </div>
   </div>
